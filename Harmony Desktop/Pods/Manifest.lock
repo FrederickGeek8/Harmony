@@ -1,0 +1,21 @@
+PODS:
+  - PeerTalk (0.0.2)
+
+DEPENDENCIES:
+  - PeerTalk (from `https://github.com/rsms/peertalk`)
+
+EXTERNAL SOURCES:
+  PeerTalk:
+    :git: https://github.com/rsms/peertalk
+
+CHECKOUT OPTIONS:
+  PeerTalk:
+    :commit: 5de384b349a1d51fc148c45f8ce0ac46b9bce39e
+    :git: https://github.com/rsms/peertalk
+
+SPEC CHECKSUMS:
+  PeerTalk: f5389c286e4d477e59b73dfbf25c5c70a2464761
+
+PODFILE CHECKSUM: a522167a9d190aeea5c75f01b3bdc726cd656896
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111CE80EE03739AFD9089E1CA90122BB /* PTPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FD51BA7A3FDE55173CA3557370EFEFA5 /* PTPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201A0B1A54556DA45CF4863044C0FBC6 /* PeerTalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D271E5DE163E99125344371F093F14CE /* PeerTalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204FD360D0529F7BB2D9F2549D413F62 /* Peertalk.h in Headers */ = {isa = PBXBuildFile; fileRef = E63288E92409DF14A9D8D490EF3E022F /* Peertalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E487BBED68E19D948C4A6145BD722F9 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = C741F8A39FD3BBF1B24CE516B77DB764 /* PTChannel.m */; };
+		2F562110CACBDF1E85346406A235DB4B /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9A2FB1912218D31F6051D1FCA52F1C /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30FB9F772D02577AD7D3861455BA56A1 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 538CCA3F63996B0BF81B2018E1FECA11 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		349F232AA9740F89145F5848E34F5A9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		4BA428B772D3E035A521C28D0296AC92 /* Pods-Harmony Desktop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E83887F3D232C10C6C5BCE96B931B8D /* Pods-Harmony Desktop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DC99E3985147D63424A60AF66630A1 /* PeerTalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D01F09EA5CEB307796C77052B388750D /* PeerTalk-dummy.m */; };
+		C2E9226E90E33AEE74D5A79DB35F83A3 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD0EC27A6BE06674F0C6BFB12B959A8 /* PTProtocol.m */; };
+		DE684CF592FD75F438FE792A3E522499 /* Pods-Harmony Desktop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 377210CA024462CEE812997B470DC9CD /* Pods-Harmony Desktop-dummy.m */; };
+		E8FA3BD84E5A7705F594A5AB98F40059 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C00BC93ECDF1661B10EB4F101EC8A56 /* PTUSBHub.m */; };
+		F59CFEDF0EC5FE6A27A0A072B92C9B30 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = C663944777B04DD3D74D8BD69853C93D /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5F4F1C5858497EE1D7FD2E917D64511 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D661D814294846B28072E139CE2F7FA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99E175ABF70FD641C60716403C7D0908;
+			remoteInfo = PeerTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0281DE3FB00A2F07989A1F695820FCCC /* Pods-Harmony Desktop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harmony Desktop-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F5A2BAAA432B3588B58E444AC21BC44 /* Pods-Harmony Desktop-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harmony Desktop-resources.sh"; sourceTree = "<group>"; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		377210CA024462CEE812997B470DC9CD /* Pods-Harmony Desktop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harmony Desktop-dummy.m"; sourceTree = "<group>"; };
+		4C00BC93ECDF1661B10EB4F101EC8A56 /* PTUSBHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTUSBHub.m; path = peertalk/PTUSBHub.m; sourceTree = "<group>"; };
+		4E83887F3D232C10C6C5BCE96B931B8D /* Pods-Harmony Desktop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harmony Desktop-umbrella.h"; sourceTree = "<group>"; };
+		4FCAA231F8CD589E2F098FFAD40C2B9D /* Pods-Harmony Desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harmony Desktop.debug.xcconfig"; sourceTree = "<group>"; };
+		52D02019BECA49D52FC1418D9B173BA2 /* PeerTalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PeerTalk.modulemap; sourceTree = "<group>"; };
+		538CCA3F63996B0BF81B2018E1FECA11 /* PTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTProtocol.h; path = peertalk/PTProtocol.h; sourceTree = "<group>"; };
+		5E48B120815FAEAAF569A43063642E27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C76DE7C43634982F47548D8A8B75632 /* Pods-Harmony Desktop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Harmony Desktop.modulemap"; sourceTree = "<group>"; };
+		7A8C6D1D5EB9B17946670FAE555E85E9 /* PeerTalk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-prefix.pch"; sourceTree = "<group>"; };
+		87D23A8EF48EBC9D0E8C16AFCCF06D92 /* Pods-Harmony Desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harmony Desktop.release.xcconfig"; sourceTree = "<group>"; };
+		8A9A2FB1912218D31F6051D1FCA52F1C /* PTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = peertalk/PTChannel.h; sourceTree = "<group>"; };
+		8E1ABE86205FF7C3E335E7AB838F95D9 /* PeerTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PeerTalk.framework; path = PeerTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFD0EC27A6BE06674F0C6BFB12B959A8 /* PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = peertalk/PTProtocol.m; sourceTree = "<group>"; };
+		BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeerTalk.xcconfig; sourceTree = "<group>"; };
+		C663944777B04DD3D74D8BD69853C93D /* PTUSBHub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTUSBHub.h; path = peertalk/PTUSBHub.h; sourceTree = "<group>"; };
+		C741F8A39FD3BBF1B24CE516B77DB764 /* PTChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTChannel.m; path = peertalk/PTChannel.m; sourceTree = "<group>"; };
+		D01F09EA5CEB307796C77052B388750D /* PeerTalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeerTalk-dummy.m"; sourceTree = "<group>"; };
+		D271E5DE163E99125344371F093F14CE /* PeerTalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-umbrella.h"; sourceTree = "<group>"; };
+		E63288E92409DF14A9D8D490EF3E022F /* Peertalk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Peertalk.h; path = peertalk/Peertalk.h; sourceTree = "<group>"; };
+		EDD00C761F391D59D3003EE741A2C070 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DD52A456232D6EDF128F9C7FB75970 /* Pods-Harmony Desktop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harmony Desktop-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA8EC43C0DACB3E45C5F4A1787778FAC /* Pods-Harmony Desktop-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harmony Desktop-frameworks.sh"; sourceTree = "<group>"; };
+		FC204167850666D536C0FC1FC4C22285 /* Pods_Harmony_Desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Harmony_Desktop.framework; path = "Pods-Harmony Desktop.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD51BA7A3FDE55173CA3557370EFEFA5 /* PTPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPrivate.h; path = peertalk/PTPrivate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B96DB75677B5609319A369CB56EC88E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349F232AA9740F89145F5848E34F5A9E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD13487DE182297984484A98E88BBE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F4F1C5858497EE1D7FD2E917D64511 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		2B84C82B60154732A1CF42CA3AF08345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1ABE86205FF7C3E335E7AB838F95D9 /* PeerTalk.framework */,
+				FC204167850666D536C0FC1FC4C22285 /* Pods_Harmony_Desktop.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C5C0666DD600E54E47B362DFEA0F3F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76554FC2043926109D4466E06F5CA8BC /* Pods-Harmony Desktop */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C068A18C5413F804A2959126093416 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76554FC2043926109D4466E06F5CA8BC /* Pods-Harmony Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				EDD00C761F391D59D3003EE741A2C070 /* Info.plist */,
+				6C76DE7C43634982F47548D8A8B75632 /* Pods-Harmony Desktop.modulemap */,
+				0281DE3FB00A2F07989A1F695820FCCC /* Pods-Harmony Desktop-acknowledgements.markdown */,
+				F3DD52A456232D6EDF128F9C7FB75970 /* Pods-Harmony Desktop-acknowledgements.plist */,
+				377210CA024462CEE812997B470DC9CD /* Pods-Harmony Desktop-dummy.m */,
+				FA8EC43C0DACB3E45C5F4A1787778FAC /* Pods-Harmony Desktop-frameworks.sh */,
+				0F5A2BAAA432B3588B58E444AC21BC44 /* Pods-Harmony Desktop-resources.sh */,
+				4E83887F3D232C10C6C5BCE96B931B8D /* Pods-Harmony Desktop-umbrella.h */,
+				4FCAA231F8CD589E2F098FFAD40C2B9D /* Pods-Harmony Desktop.debug.xcconfig */,
+				87D23A8EF48EBC9D0E8C16AFCCF06D92 /* Pods-Harmony Desktop.release.xcconfig */,
+			);
+			name = "Pods-Harmony Desktop";
+			path = "Target Support Files/Pods-Harmony Desktop";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				9152F1AC9DBB8080B4E3A49A20D65F8F /* Pods */,
+				2B84C82B60154732A1CF42CA3AF08345 /* Products */,
+				2C5C0666DD600E54E47B362DFEA0F3F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		861533D72EB1F17773465DFB99641D69 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E48B120815FAEAAF569A43063642E27 /* Info.plist */,
+				52D02019BECA49D52FC1418D9B173BA2 /* PeerTalk.modulemap */,
+				BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */,
+				D01F09EA5CEB307796C77052B388750D /* PeerTalk-dummy.m */,
+				7A8C6D1D5EB9B17946670FAE555E85E9 /* PeerTalk-prefix.pch */,
+				D271E5DE163E99125344371F093F14CE /* PeerTalk-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PeerTalk";
+			sourceTree = "<group>";
+		};
+		9152F1AC9DBB8080B4E3A49A20D65F8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A752CA07DD7F0F116DDFCF4BBDFD104F /* PeerTalk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A752CA07DD7F0F116DDFCF4BBDFD104F /* PeerTalk */ = {
+			isa = PBXGroup;
+			children = (
+				E63288E92409DF14A9D8D490EF3E022F /* Peertalk.h */,
+				8A9A2FB1912218D31F6051D1FCA52F1C /* PTChannel.h */,
+				C741F8A39FD3BBF1B24CE516B77DB764 /* PTChannel.m */,
+				FD51BA7A3FDE55173CA3557370EFEFA5 /* PTPrivate.h */,
+				538CCA3F63996B0BF81B2018E1FECA11 /* PTProtocol.h */,
+				AFD0EC27A6BE06674F0C6BFB12B959A8 /* PTProtocol.m */,
+				C663944777B04DD3D74D8BD69853C93D /* PTUSBHub.h */,
+				4C00BC93ECDF1661B10EB4F101EC8A56 /* PTUSBHub.m */,
+				861533D72EB1F17773465DFB99641D69 /* Support Files */,
+			);
+			name = PeerTalk;
+			path = PeerTalk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B08B5B0B9BBB6407868F1E565BD0187 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201A0B1A54556DA45CF4863044C0FBC6 /* PeerTalk-umbrella.h in Headers */,
+				204FD360D0529F7BB2D9F2549D413F62 /* Peertalk.h in Headers */,
+				2F562110CACBDF1E85346406A235DB4B /* PTChannel.h in Headers */,
+				111CE80EE03739AFD9089E1CA90122BB /* PTPrivate.h in Headers */,
+				30FB9F772D02577AD7D3861455BA56A1 /* PTProtocol.h in Headers */,
+				F59CFEDF0EC5FE6A27A0A072B92C9B30 /* PTUSBHub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79859CA8E5079AB5564D0AD3540278B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA428B772D3E035A521C28D0296AC92 /* Pods-Harmony Desktop-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99E175ABF70FD641C60716403C7D0908 /* PeerTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 373E8164FA50C31E58C8F45152CA90C9 /* Build configuration list for PBXNativeTarget "PeerTalk" */;
+			buildPhases = (
+				08B11D671040F36B188265AD529FB2F7 /* Sources */,
+				BD13487DE182297984484A98E88BBE85 /* Frameworks */,
+				9B08B5B0B9BBB6407868F1E565BD0187 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeerTalk;
+			productName = PeerTalk;
+			productReference = 8E1ABE86205FF7C3E335E7AB838F95D9 /* PeerTalk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE6D6A42D26F858AB85839E1BAE869EF /* Pods-Harmony Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89093CE1AD8AFC5687D05F6B21B4E30C /* Build configuration list for PBXNativeTarget "Pods-Harmony Desktop" */;
+			buildPhases = (
+				CC5AB61B6590D8812D7636082F6DC847 /* Sources */,
+				3B96DB75677B5609319A369CB56EC88E /* Frameworks */,
+				B79859CA8E5079AB5564D0AD3540278B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2964D72FCD81164E09CBDD9E461F7DE /* PBXTargetDependency */,
+			);
+			name = "Pods-Harmony Desktop";
+			productName = "Pods-Harmony Desktop";
+			productReference = FC204167850666D536C0FC1FC4C22285 /* Pods_Harmony_Desktop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2B84C82B60154732A1CF42CA3AF08345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99E175ABF70FD641C60716403C7D0908 /* PeerTalk */,
+				FE6D6A42D26F858AB85839E1BAE869EF /* Pods-Harmony Desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08B11D671040F36B188265AD529FB2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DC99E3985147D63424A60AF66630A1 /* PeerTalk-dummy.m in Sources */,
+				2E487BBED68E19D948C4A6145BD722F9 /* PTChannel.m in Sources */,
+				C2E9226E90E33AEE74D5A79DB35F83A3 /* PTProtocol.m in Sources */,
+				E8FA3BD84E5A7705F594A5AB98F40059 /* PTUSBHub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5AB61B6590D8812D7636082F6DC847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE684CF592FD75F438FE792A3E522499 /* Pods-Harmony Desktop-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2964D72FCD81164E09CBDD9E461F7DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PeerTalk;
+			target = 99E175ABF70FD641C60716403C7D0908 /* PeerTalk */;
+			targetProxy = D661D814294846B28072E139CE2F7FA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4540B30AD9C0E6CB51B2DD9785470495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		830DBE08102BDE17F9A1EEF5FAE6551F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCAA231F8CD589E2F098FFAD40C2B9D /* Pods-Harmony Desktop.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Harmony Desktop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Harmony_Desktop;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		945EB9E2C47E9C30E16985278CFFC5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A86C02E8AC0570F7E5228E891EDBEEEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeerTalk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PeerTalk;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8900C4491A5FAC5610F5E53B9FA2DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D23A8EF48EBC9D0E8C16AFCCF06D92 /* Pods-Harmony Desktop.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Harmony Desktop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Harmony_Desktop;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F892D0AF7A7F47208D1C23A0CA9AB285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeerTalk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PeerTalk;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4540B30AD9C0E6CB51B2DD9785470495 /* Debug */,
+				945EB9E2C47E9C30E16985278CFFC5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		373E8164FA50C31E58C8F45152CA90C9 /* Build configuration list for PBXNativeTarget "PeerTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F892D0AF7A7F47208D1C23A0CA9AB285 /* Debug */,
+				A86C02E8AC0570F7E5228E891EDBEEEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89093CE1AD8AFC5687D05F6B21B4E30C /* Build configuration list for PBXNativeTarget "Pods-Harmony Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830DBE08102BDE17F9A1EEF5FAE6551F /* Debug */,
+				D8900C4491A5FAC5610F5E53B9FA2DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

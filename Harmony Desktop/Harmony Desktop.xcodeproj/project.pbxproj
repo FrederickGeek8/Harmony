@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B38DE519631052785D04F5CB /* Pods_Harmony_Desktop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C282C7100C665BB1D5A207B5 /* Pods_Harmony_Desktop.framework */; };
+		B63C8FF31F21CEC100F7EBBB /* PayloadConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C8FF21F21CEC100F7EBBB /* PayloadConverter.m */; };
+		B6C3F8B71F2109EC00B9B488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3F8B61F2109EC00B9B488 /* AppDelegate.swift */; };
+		B6C3F8B91F2109EC00B9B488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3F8B81F2109EC00B9B488 /* ViewController.swift */; };
+		B6C3F8BB1F2109EC00B9B488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C3F8BA1F2109EC00B9B488 /* Assets.xcassets */; };
+		B6C3F8BE1F2109EC00B9B488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C3F8BC1F2109EC00B9B488 /* Main.storyboard */; };
+		B6F8351E1F210D33009B6BDB /* MouseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8351D1F210D33009B6BDB /* MouseController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		084137412AD624CB1408874B /* Pods-Harmony Desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony Desktop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5EE95039D9A4E7344593B5 /* Pods-Harmony Desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony Desktop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop.release.xcconfig"; sourceTree = "<group>"; };
+		B63C8FF21F21CEC100F7EBBB /* PayloadConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayloadConverter.m; sourceTree = "<group>"; };
+		B6491E191F21B45600B88B37 /* PTExampleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTExampleProtocol.h; sourceTree = "<group>"; };
+		B6C3F8B31F2109EC00B9B488 /* Harmony Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harmony Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C3F8B61F2109EC00B9B488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6C3F8B81F2109EC00B9B488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6C3F8BA1F2109EC00B9B488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6C3F8BD1F2109EC00B9B488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6C3F8BF1F2109EC00B9B488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F8351A1F210AD7009B6BDB /* Harmony Desktop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Harmony Desktop-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6F8351D1F210D33009B6BDB /* MouseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseController.swift; sourceTree = "<group>"; };
+		C282C7100C665BB1D5A207B5 /* Pods_Harmony_Desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony_Desktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6C3F8B01F2109EC00B9B488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38DE519631052785D04F5CB /* Pods_Harmony_Desktop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690BDC395F9FA4AF812662AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				084137412AD624CB1408874B /* Pods-Harmony Desktop.debug.xcconfig */,
+				4C5EE95039D9A4E7344593B5 /* Pods-Harmony Desktop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C331146219748B64D47F66B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C282C7100C665BB1D5A207B5 /* Pods_Harmony_Desktop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C3F8AA1F2109EC00B9B488 = {
+			isa = PBXGroup;
+			children = (
+				B6C3F8B51F2109EC00B9B488 /* Harmony Desktop */,
+				B6C3F8B41F2109EC00B9B488 /* Products */,
+				690BDC395F9FA4AF812662AD /* Pods */,
+				7C331146219748B64D47F66B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6C3F8B41F2109EC00B9B488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3F8B31F2109EC00B9B488 /* Harmony Desktop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6C3F8B51F2109EC00B9B488 /* Harmony Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3F8B61F2109EC00B9B488 /* AppDelegate.swift */,
+				B6C3F8B81F2109EC00B9B488 /* ViewController.swift */,
+				B6491E191F21B45600B88B37 /* PTExampleProtocol.h */,
+				B63C8FF21F21CEC100F7EBBB /* PayloadConverter.m */,
+				B6F8351D1F210D33009B6BDB /* MouseController.swift */,
+				B6C3F8BA1F2109EC00B9B488 /* Assets.xcassets */,
+				B6C3F8BC1F2109EC00B9B488 /* Main.storyboard */,
+				B6C3F8BF1F2109EC00B9B488 /* Info.plist */,
+				B6F8351A1F210AD7009B6BDB /* Harmony Desktop-Bridging-Header.h */,
+			);
+			path = "Harmony Desktop";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6C3F8B21F2109EC00B9B488 /* Harmony Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C3F8C21F2109EC00B9B488 /* Build configuration list for PBXNativeTarget "Harmony Desktop" */;
+			buildPhases = (
+				37BF5B3EC360FB8A15C68401 /* [CP] Check Pods Manifest.lock */,
+				B6C3F8AF1F2109EC00B9B488 /* Sources */,
+				B6C3F8B01F2109EC00B9B488 /* Frameworks */,
+				B6C3F8B11F2109EC00B9B488 /* Resources */,
+				233924AB2AEC4081880DB17C /* [CP] Embed Pods Frameworks */,
+				65518779BEBCFC7A625CD4CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Harmony Desktop";
+			productName = "Harmony Desktop";
+			productReference = B6C3F8B31F2109EC00B9B488 /* Harmony Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6C3F8AB1F2109EC00B9B488 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Frederick Morlock";
+				TargetAttributes = {
+					B6C3F8B21F2109EC00B9B488 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B6C3F8AE1F2109EC00B9B488 /* Build configuration list for PBXProject "Harmony Desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6C3F8AA1F2109EC00B9B488;
+			productRefGroup = B6C3F8B41F2109EC00B9B488 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6C3F8B21F2109EC00B9B488 /* Harmony Desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6C3F8B11F2109EC00B9B488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C3F8BB1F2109EC00B9B488 /* Assets.xcassets in Resources */,
+				B6C3F8BE1F2109EC00B9B488 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233924AB2AEC4081880DB17C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37BF5B3EC360FB8A15C68401 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65518779BEBCFC7A625CD4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6C3F8AF1F2109EC00B9B488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C3F8B91F2109EC00B9B488 /* ViewController.swift in Sources */,
+				B6C3F8B71F2109EC00B9B488 /* AppDelegate.swift in Sources */,
+				B6F8351E1F210D33009B6BDB /* MouseController.swift in Sources */,
+				B63C8FF31F21CEC100F7EBBB /* PayloadConverter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6C3F8BC1F2109EC00B9B488 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6C3F8BD1F2109EC00B9B488 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6C3F8C01F2109EC00B9B488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6C3F8C11F2109EC00B9B488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		B6C3F8C31F2109EC00B9B488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084137412AD624CB1408874B /* Pods-Harmony Desktop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Harmony Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.freddy.Harmony-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Harmony Desktop/Harmony Desktop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B6C3F8C41F2109EC00B9B488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5EE95039D9A4E7344593B5 /* Pods-Harmony Desktop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Harmony Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.freddy.Harmony-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Harmony Desktop/Harmony Desktop-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6C3F8AE1F2109EC00B9B488 /* Build configuration list for PBXProject "Harmony Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C3F8C01F2109EC00B9B488 /* Debug */,
+				B6C3F8C11F2109EC00B9B488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C3F8C21F2109EC00B9B488 /* Build configuration list for PBXNativeTarget "Harmony Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C3F8C31F2109EC00B9B488 /* Debug */,
+				B6C3F8C41F2109EC00B9B488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6C3F8AB1F2109EC00B9B488 /* Project object */;
+}

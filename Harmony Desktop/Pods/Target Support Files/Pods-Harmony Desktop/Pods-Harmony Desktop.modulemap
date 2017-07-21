@@ -1,0 +1,6 @@
+framework module Pods_Harmony_Desktop {
+  umbrella header "Pods-Harmony Desktop-umbrella.h"
+
+  export *
+  module * { export * }
+}
