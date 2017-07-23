@@ -11,6 +11,7 @@ enum {
     PTExampleFrameTypeTextMessage = 101,
     PTExampleFrameTypePing = 102,
     PTExampleFrameTypePong = 103,
+    PTExampleFrameTypeImage = 104
 };
 
 typedef struct _PTExampleTextFrame {

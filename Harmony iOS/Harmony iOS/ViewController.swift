@@ -11,6 +11,7 @@ import PeerTalk.PTChannel
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
     weak var serverChannel_: PTChannel?
     weak var peerChannel_: PTChannel?
     
@@ -84,6 +85,10 @@ class ViewController: UIViewController {
         // point.x and point.y have the coordinates of the touch
     }
     
+    func updateImage(image: UIImage) {
+        imageView.image = image
+    }
+    
     // MARK: Communicating
     func sendDeviceInfo() {
         if (peerChannel_ == nil) {
@@ -113,7 +118,7 @@ extension ViewController: PTChannelDelegate {
         if channel != peerChannel_ {
             // A previous channel that has been canceled but not yet ended. Ignore.
             return false
-        } else if type != UInt32(PTExampleFrameTypeTextMessage) && type != UInt32(PTExampleFrameTypePing) {
+        } else if type != UInt32(PTExampleFrameTypeTextMessage) && type != UInt32(PTExampleFrameTypePing) && type != UInt32(PTExampleFrameTypeImage) {
             print("Unexpected frame of type \(type)")
             channel.close()
             return false
@@ -134,6 +139,10 @@ extension ViewController: PTChannelDelegate {
         if type == UInt32(PTExampleFrameTypeTextMessage) {
             let textFrame = PayloadConverter().convert(toString: payload);
             print(textFrame)
+        } else if type == UInt32(PTExampleFrameTypeImage) {
+            let data = NSData.init(bytes: payload.data, length: payload.length)
+            let image = UIImage.init(data: data as Data)
+            updateImage(image: image!)
         } else if type == UInt32(PTExampleFrameTypePing) && (peerChannel_ != nil) {
             peerChannel_?.sendFrame(ofType: UInt32(PTExampleFrameTypePong), tag: tag, withPayload: nil, callback: nil)
         }

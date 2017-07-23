@@ -8,9 +8,11 @@
 
 import Cocoa
 import PeerTalk
+import AVFoundation
 
 class ViewController: NSViewController {
     
+    @IBOutlet weak var imageView: NSImageView!
     private(set) var connectedDeviceID: NSNumber?
     private let PTAppReconnectDelay: TimeInterval = 1.0
     var connectingToDeviceID_: NSNumber?
@@ -25,6 +27,11 @@ class ViewController: NSViewController {
     var pings_ = [AnyHashable: Any]()
     var scaleX = Float()
     var scaleY = Float()
+    
+    let captureSession = AVCaptureSession()
+    var captureDevice : AVCaptureDevice?
+    var videoCaptureOutput : AVCaptureVideoDataOutput!
+    let captureSessionQueue = DispatchQueue(label: "CameraSessionQueue", attributes: [])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,18 +40,45 @@ class ViewController: NSViewController {
         self.enqueueConnectToLocalIPv4Port()
         self.ping()
         
-        /*
-        let screenSize = NSScreen.main()?.frame;
-        print(screenSize?.width, screenSize?.height)
-        MouseController.moveTo(x: 0, y: 0)
-        MouseController.mouseDown()
- */
+        self.captureSession.sessionPreset = AVCaptureSessionPreset320x240
+        self.captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        let displayId: CGDirectDisplayID = CGDirectDisplayID(CGMainDisplayID())
+        let input: AVCaptureScreenInput = AVCaptureScreenInput(displayID: displayId)
+        
+        if ((self.captureSession.canAddInput(input)) != nil) {
+            self.captureSession.addInput(input)
+        }
+        
+        self.videoCaptureOutput = AVCaptureVideoDataOutput()
+        self.videoCaptureOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable:kCVPixelFormatType_32BGRA]
+    
+        self.videoCaptureOutput.alwaysDiscardsLateVideoFrames = true
+        self.videoCaptureOutput.setSampleBufferDelegate(self, queue: captureSessionQueue)
+        
+        self.captureSession.addOutput(self.videoCaptureOutput)
+        self.captureSession.startRunning()
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
+        }
+    }
+    
+    func sendImage(image: NSImage) {
+        
+        if ((connectedChannel_) != nil) {
+            let dataLoad = image.tiffRepresentation as! NSData
+            let payload = dataLoad.createReferencingDispatchData()
+            connectedChannel_?.sendFrame(ofType: UInt32(PTExampleFrameTypeImage), tag: PTFrameNoTag, withPayload: payload, callback: {(_ error: Error?) -> Void in
+                if error != nil {
+                    print("Failed to send message: \(error!)")
+                }
+            })
         }
     }
     
@@ -241,7 +275,27 @@ class ViewController: NSViewController {
         })
     }
 
+}
 
+extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
+        
+//        print("capture delegation called")
+        
+        let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
+        let ciImage = CIImage.init(cvPixelBuffer: pixelBuffer)
+        
+        let context = CIContext.init()
+        let myRect = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(pixelBuffer) / 5, height: CVPixelBufferGetHeight(pixelBuffer) / 5)
+        let myImage = context.createCGImage(ciImage, from: myRect)
+        
+        let uiImage = NSImage.init(cgImage: myImage!, size: NSSize.init(width: CVPixelBufferGetWidth(pixelBuffer), height: CVPixelBufferGetHeight(pixelBuffer)))
+//        imageView.image = uiImage
+        
+        // scale down image
+        
+        sendImage(image: uiImage)
+    }
 }
 
 extension ViewController: PTChannelDelegate {
