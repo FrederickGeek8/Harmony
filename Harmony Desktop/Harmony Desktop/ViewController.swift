@@ -39,7 +39,7 @@ class ViewController: NSViewController {
         self.startListeningForDevices()
         self.enqueueConnectToLocalIPv4Port()
         self.ping()
-        
+        /*
         self.captureSession.sessionPreset = AVCaptureSessionPreset320x240
         self.captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         let displayId: CGDirectDisplayID = CGDirectDisplayID(CGMainDisplayID())
@@ -57,7 +57,7 @@ class ViewController: NSViewController {
         
         self.captureSession.addOutput(self.videoCaptureOutput)
         self.captureSession.startRunning()
-        
+        */
         
         
         // Do any additional setup after loading the view.
