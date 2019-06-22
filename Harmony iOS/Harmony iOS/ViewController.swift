@@ -11,14 +11,25 @@ import PeerTalk.PTChannel
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var movieView: UIView!
     weak var serverChannel_: PTChannel?
     weak var peerChannel_: PTChannel?
+    
+    struct Streams {
+        let input: InputStream
+        let output: OutputStream
+    }
+    
+    var boundStreams: Streams?
+    var canWrite = false
+    
+    var mediaPlayer = VLCMediaPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let channel = PTChannel.init(delegate: self as! PTChannelDelegate)
+        
+        let channel = PTChannel.init(delegate: self)
         channel?.listen(onPort: in_port_t(PTExampleProtocolIPv4PortNumber), iPv4Address: INADDR_LOOPBACK, callback: {(error: Error?) -> Void in
             if (error) != nil {
                 print("Failed to listen on 127.0.0.1:" + String(PTExampleProtocolIPv4PortNumber))
@@ -28,6 +39,26 @@ class ViewController: UIViewController {
                 self.serverChannel_ = channel
             }
         })
+        
+        var inputOrNil: InputStream? = nil
+        var outputOrNil: OutputStream? = nil
+        Stream.getBoundStreams(withBufferSize: 8096,
+                               inputStream: &inputOrNil,
+                               outputStream: &outputOrNil)
+        guard let input = inputOrNil, let output = outputOrNil else {
+            fatalError("On return of `getBoundStreams`, both `inputStream` and `outputStream` will contain non-nil streams.")
+        }
+        // configure and open output stream
+        
+        output.schedule(in: .current, forMode: .default)
+        output.open()
+        boundStreams = Streams(input: input, output: output)
+        
+        
+        let media = VLCMedia(stream: boundStreams!.input)
+        mediaPlayer.media = media
+        mediaPlayer.drawable = movieView
+        mediaPlayer.play()
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,14 +116,10 @@ class ViewController: UIViewController {
         // point.x and point.y have the coordinates of the touch
     }
     
-    func updateImage(image: UIImage) {
-        imageView.image = image
-    }
-    
     // MARK: Communicating
     func sendDeviceInfo() {
         if (peerChannel_ == nil) {
-            return;
+            return
         }
         
         print("Sending device info")
@@ -111,14 +138,13 @@ class ViewController: UIViewController {
     
     
 }
-
 // MARK: PTChannelDelegate
 extension ViewController: PTChannelDelegate {
     func ioFrameChannel(_ channel: PTChannel, shouldAcceptFrameOfType type: UInt32, tag: UInt32, payloadSize: UInt32) -> Bool {
         if channel != peerChannel_ {
             // A previous channel that has been canceled but not yet ended. Ignore.
             return false
-        } else if type != UInt32(PTExampleFrameTypeTextMessage) && type != UInt32(PTExampleFrameTypePing) && type != UInt32(PTExampleFrameTypeImage) {
+        } else if type != UInt32(PTExampleFrameTypeTextMessage) && type != UInt32(PTExampleFrameTypePing) && type != UInt32(PTExampleFrameTypeData) {
             print("Unexpected frame of type \(type)")
             channel.close()
             return false
@@ -139,10 +165,11 @@ extension ViewController: PTChannelDelegate {
         if type == UInt32(PTExampleFrameTypeTextMessage) {
             let textFrame = PayloadConverter().convert(toString: payload);
             print(textFrame)
-        } else if type == UInt32(PTExampleFrameTypeImage) {
-            let data = NSData.init(bytes: payload.data, length: payload.length)
-            let image = UIImage.init(data: data as Data)
-            updateImage(image: image!)
+        } else if type == UInt32(PTExampleFrameTypeData) {
+            if ((boundStreams?.output.hasSpaceAvailable)!) {
+                let data = NSData.init(bytes: payload.data, length: payload.length)
+                boundStreams?.output.write([UInt8](data), maxLength: payload.length)
+            }
         } else if type == UInt32(PTExampleFrameTypePing) && (peerChannel_ != nil) {
             peerChannel_?.sendFrame(ofType: UInt32(PTExampleFrameTypePong), tag: tag, withPayload: nil, callback: nil)
         }

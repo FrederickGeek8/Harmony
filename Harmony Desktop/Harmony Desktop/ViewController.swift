@@ -9,8 +9,9 @@
 import Cocoa
 import PeerTalk
 import AVFoundation
+import CocoaAsyncSocket
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, GCDAsyncUdpSocketDelegate {
     
     @IBOutlet weak var imageView: NSImageView!
     private(set) var connectedDeviceID: NSNumber?
@@ -28,10 +29,7 @@ class ViewController: NSViewController {
     var scaleX = Float()
     var scaleY = Float()
     
-    let captureSession = AVCaptureSession()
-    var captureDevice : AVCaptureDevice?
-    var videoCaptureOutput : AVCaptureVideoDataOutput!
-    let captureSessionQueue = DispatchQueue(label: "CameraSessionQueue", attributes: [])
+    var udpSocket: GCDAsyncUdpSocket?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,26 +37,15 @@ class ViewController: NSViewController {
         self.startListeningForDevices()
         self.enqueueConnectToLocalIPv4Port()
         self.ping()
-        /*
-        self.captureSession.sessionPreset = AVCaptureSessionPreset320x240
-        self.captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
-        let displayId: CGDirectDisplayID = CGDirectDisplayID(CGMainDisplayID())
-        let input: AVCaptureScreenInput = AVCaptureScreenInput(displayID: displayId)
         
-        if ((self.captureSession.canAddInput(input)) != nil) {
-            self.captureSession.addInput(input)
-        }
         
-        self.videoCaptureOutput = AVCaptureVideoDataOutput()
-        self.videoCaptureOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable:kCVPixelFormatType_32BGRA]
-    
-        self.videoCaptureOutput.alwaysDiscardsLateVideoFrames = true
-        self.videoCaptureOutput.setSampleBufferDelegate(self, queue: captureSessionQueue)
+        udpSocket = GCDAsyncUdpSocket(delegate: self, delegateQueue: DispatchQueue.main)
+        try! udpSocket?.bind(toPort: 4000)
+        try! udpSocket?.enableBroadcast(true)
+        try! udpSocket?.beginReceiving()
         
-        self.captureSession.addOutput(self.videoCaptureOutput)
-        self.captureSession.startRunning()
-        */
         
+//        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(transmit), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
     }
@@ -69,17 +56,23 @@ class ViewController: NSViewController {
         }
     }
     
-    func sendImage(image: NSImage) {
-        
+    func udpSocket(_ sock: GCDAsyncUdpSocket, didReceive data: Data, fromAddress address: Data, withFilterContext filterContext: Any?) {
+        sendImage(data: data)
+    }
+    
+    func sendImage(data: Data) {
         if ((connectedChannel_) != nil) {
-            let dataLoad = image.tiffRepresentation as! NSData
+            let dataLoad = data as NSData
             let payload = dataLoad.createReferencingDispatchData()
-            connectedChannel_?.sendFrame(ofType: UInt32(PTExampleFrameTypeImage), tag: PTFrameNoTag, withPayload: payload, callback: {(_ error: Error?) -> Void in
+            connectedChannel_?.sendFrame(ofType: UInt32(PTExampleFrameTypeData), tag: PTFrameNoTag, withPayload: payload, callback: {(_ error: Error?) -> Void in
                 if error != nil {
                     print("Failed to send message: \(error!)")
                 }
             })
         }
+    }
+    
+    @objc func transmit() {
     }
     
     func interpretMessage(message: String) {
@@ -102,7 +95,7 @@ class ViewController: NSViewController {
         let x = Float(splitString[0])!
         let y = Float(splitString[1])!
         
-        let screenSize = NSScreen.main()?.frame;
+        let screenSize = NSScreen.main?.frame;
         scaleX = Float(screenSize!.width) / x
         scaleY = Float(screenSize!.height) / y
         
@@ -137,7 +130,7 @@ class ViewController: NSViewController {
         }
     }
     
-    func ping() {
+    @objc func ping() {
         if connectedChannel_ != nil {
             
             if !pings_.isEmpty {
@@ -211,7 +204,7 @@ class ViewController: NSViewController {
         }
     }
     
-    func enqueueConnectToLocalIPv4Port() {
+    @objc func enqueueConnectToLocalIPv4Port() {
         notConnectedQueue_.async(execute: {() -> Void in
             DispatchQueue.main.async(execute: {() -> Void in
                 self.connectToLocalIPv4Port()
@@ -241,7 +234,7 @@ class ViewController: NSViewController {
         })
     }
 
-    func enqueueConnectToUSBDevice() {
+    @objc func enqueueConnectToUSBDevice() {
         notConnectedQueue_.async(execute: {() -> Void in
             DispatchQueue.main.async(execute: {() -> Void in
                 self.connectToUSBDevice()
@@ -275,27 +268,6 @@ class ViewController: NSViewController {
         })
     }
 
-}
-
-extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
-        
-//        print("capture delegation called")
-        
-        let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
-        let ciImage = CIImage.init(cvPixelBuffer: pixelBuffer)
-        
-        let context = CIContext.init()
-        let myRect = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(pixelBuffer) / 5, height: CVPixelBufferGetHeight(pixelBuffer) / 5)
-        let myImage = context.createCGImage(ciImage, from: myRect)
-        
-        let uiImage = NSImage.init(cgImage: myImage!, size: NSSize.init(width: CVPixelBufferGetWidth(pixelBuffer), height: CVPixelBufferGetHeight(pixelBuffer)))
-//        imageView.image = uiImage
-        
-        // scale down image
-        
-        sendImage(image: uiImage)
-    }
 }
 
 extension ViewController: PTChannelDelegate {

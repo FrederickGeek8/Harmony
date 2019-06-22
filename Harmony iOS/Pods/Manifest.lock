@@ -1,8 +1,14 @@
 PODS:
+  - MobileVLCKit (3.1.5)
   - PeerTalk (0.0.2)
 
 DEPENDENCIES:
+  - MobileVLCKit
   - PeerTalk (from `https://github.com/rsms/peertalk`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MobileVLCKit
 
 EXTERNAL SOURCES:
   PeerTalk:
@@ -14,8 +20,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/rsms/peertalk
 
 SPEC CHECKSUMS:
+  MobileVLCKit: 4d44e56380d0ee41c76f9ec7015d3a4b62a963a3
   PeerTalk: f5389c286e4d477e59b73dfbf25c5c70a2464761
 
-PODFILE CHECKSUM: 0e2f5e7861d58a5ea01ebcb59df0a75f48dc84b7
+PODFILE CHECKSUM: 5245fa66ea6eaf332c960d33a4a4390850ccde93
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.7.2

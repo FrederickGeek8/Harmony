@@ -4,4 +4,5 @@
 
 #import "PTExampleProtocol.h"
 #import "PeerTalk/PTChannel.h"
+#import "MobileVLCKit/MobileVLCKit.h"
 #import "PayloadConverter.m"

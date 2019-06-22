@@ -7,179 +7,247 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		111CE80EE03739AFD9089E1CA90122BB /* PTPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FD51BA7A3FDE55173CA3557370EFEFA5 /* PTPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		201A0B1A54556DA45CF4863044C0FBC6 /* PeerTalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D271E5DE163E99125344371F093F14CE /* PeerTalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		204FD360D0529F7BB2D9F2549D413F62 /* Peertalk.h in Headers */ = {isa = PBXBuildFile; fileRef = E63288E92409DF14A9D8D490EF3E022F /* Peertalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E487BBED68E19D948C4A6145BD722F9 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = C741F8A39FD3BBF1B24CE516B77DB764 /* PTChannel.m */; };
-		2F562110CACBDF1E85346406A235DB4B /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9A2FB1912218D31F6051D1FCA52F1C /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30FB9F772D02577AD7D3861455BA56A1 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 538CCA3F63996B0BF81B2018E1FECA11 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		349F232AA9740F89145F5848E34F5A9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		4BA428B772D3E035A521C28D0296AC92 /* Pods-Harmony Desktop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E83887F3D232C10C6C5BCE96B931B8D /* Pods-Harmony Desktop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68DC99E3985147D63424A60AF66630A1 /* PeerTalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D01F09EA5CEB307796C77052B388750D /* PeerTalk-dummy.m */; };
-		C2E9226E90E33AEE74D5A79DB35F83A3 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD0EC27A6BE06674F0C6BFB12B959A8 /* PTProtocol.m */; };
-		DE684CF592FD75F438FE792A3E522499 /* Pods-Harmony Desktop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 377210CA024462CEE812997B470DC9CD /* Pods-Harmony Desktop-dummy.m */; };
-		E8FA3BD84E5A7705F594A5AB98F40059 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C00BC93ECDF1661B10EB4F101EC8A56 /* PTUSBHub.m */; };
-		F59CFEDF0EC5FE6A27A0A072B92C9B30 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = C663944777B04DD3D74D8BD69853C93D /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5F4F1C5858497EE1D7FD2E917D64511 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		181C81C739F806BCDD6F760FD30A01FB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9F6C57852FA5E9FCA926EEC18BA1AF /* CoreServices.framework */; };
+		1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E9D076240FB870F59D3309035F07F7 /* GCDAsyncSocket.m */; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF40BFCB8AACA2153D212EEE4C2FBCE /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3049164347040F4B058A22718087F21D /* PTPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 225076D0321178A89256B7DF1F604175 /* PTPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EEF1C633A740C47C290A5CD427B71D /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58414D9A71481CDBA462F8E12D4EACB3 /* Peertalk.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A60F6C64570E9F2375CF7E92E892BFF /* Peertalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 499964AC13B149B93A841643B50BC9AF /* GCDAsyncUdpSocket.m */; };
+		735214081F98B9550FBE803825D416E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932C7AC7274383D5CB255B9509628FD0 /* Cocoa.framework */; };
+		781E6E1036157A7B3C0AD6C694D8AEF5 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AE5C7573A32C34D689814194BD058F /* PTChannel.m */; };
+		8E833467B449C5AA8EB04A12B5674FC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932C7AC7274383D5CB255B9509628FD0 /* Cocoa.framework */; };
+		961657DA2AFF00C23784E740BEC58DA5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932C7AC7274383D5CB255B9509628FD0 /* Cocoa.framework */; };
+		ABC814C543979C2E5BEA3CC114C5958E /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FB5FF80AF8903C3FA5AB6CA152620B4B /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2CF7FE359B07D646CBBE2C5A6B147 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE978B837300B32BFFCDAB8F62EE7A /* Security.framework */; };
+		AFE1A00176DB746A13F566FB547BA30C /* PeerTalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B2DF1CE9AA3BEC07B11BCAC735C5EA /* PeerTalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B5104F1172BD351E46DA5FD1CB8ED4 /* Pods-Harmony Desktop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D54A2E15D5722227A74E853262D45C /* Pods-Harmony Desktop-dummy.m */; };
+		D5895848CC357E9BCE52ACA311E7993D /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 546FC9CB0F7C72171C97D1F3A454EBEF /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A74FDD323299F14B72654561AAD54F5 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E00BD58C07B8A4100BBAB93356F3A96C /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5F3612C24BF6D1B37893381A52639F /* PTUSBHub.m */; };
+		E166CC63A6043463EB6879BD42CD13E8 /* Pods-Harmony Desktop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD4504F5069CE8950F0ED1FE5790C4B /* Pods-Harmony Desktop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E52EAE1A9D2F34ADFD54B5EEC57EDDF8 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = E75CA66E6237BE005E32EDDBD0491F58 /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED4339497F7D326DBDE8E5C85F87CD9B /* PeerTalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2053C1DB25243ED5BD53BEE53F8C9C /* PeerTalk-dummy.m */; };
+		FA903A14CA27AF1092C6B0F44867CE30 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1DD5BA33191137DDCDC5C5BB8A7AE /* PTProtocol.m */; };
+		FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF3BAE505FC70112CE36A1FC4879B58 /* CocoaAsyncSocket-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D661D814294846B28072E139CE2F7FA3 /* PBXContainerItemProxy */ = {
+		66BF399756F374FA54AD88386A368DCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 99E175ABF70FD641C60716403C7D0908;
+			remoteGlobalIDString = 6FD69D817A22366167FF59EC7BC8EE7C;
 			remoteInfo = PeerTalk;
+		};
+		A7C1C966DF28B2418E18EC9DE636ACFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0281DE3FB00A2F07989A1F695820FCCC /* Pods-Harmony Desktop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harmony Desktop-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F5A2BAAA432B3588B58E444AC21BC44 /* Pods-Harmony Desktop-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harmony Desktop-resources.sh"; sourceTree = "<group>"; };
-		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		377210CA024462CEE812997B470DC9CD /* Pods-Harmony Desktop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harmony Desktop-dummy.m"; sourceTree = "<group>"; };
-		4C00BC93ECDF1661B10EB4F101EC8A56 /* PTUSBHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTUSBHub.m; path = peertalk/PTUSBHub.m; sourceTree = "<group>"; };
-		4E83887F3D232C10C6C5BCE96B931B8D /* Pods-Harmony Desktop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harmony Desktop-umbrella.h"; sourceTree = "<group>"; };
-		4FCAA231F8CD589E2F098FFAD40C2B9D /* Pods-Harmony Desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harmony Desktop.debug.xcconfig"; sourceTree = "<group>"; };
-		52D02019BECA49D52FC1418D9B173BA2 /* PeerTalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PeerTalk.modulemap; sourceTree = "<group>"; };
-		538CCA3F63996B0BF81B2018E1FECA11 /* PTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTProtocol.h; path = peertalk/PTProtocol.h; sourceTree = "<group>"; };
-		5E48B120815FAEAAF569A43063642E27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C76DE7C43634982F47548D8A8B75632 /* Pods-Harmony Desktop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Harmony Desktop.modulemap"; sourceTree = "<group>"; };
-		7A8C6D1D5EB9B17946670FAE555E85E9 /* PeerTalk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-prefix.pch"; sourceTree = "<group>"; };
-		87D23A8EF48EBC9D0E8C16AFCCF06D92 /* Pods-Harmony Desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harmony Desktop.release.xcconfig"; sourceTree = "<group>"; };
-		8A9A2FB1912218D31F6051D1FCA52F1C /* PTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = peertalk/PTChannel.h; sourceTree = "<group>"; };
-		8E1ABE86205FF7C3E335E7AB838F95D9 /* PeerTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PeerTalk.framework; path = PeerTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AFD0EC27A6BE06674F0C6BFB12B959A8 /* PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = peertalk/PTProtocol.m; sourceTree = "<group>"; };
-		BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeerTalk.xcconfig; sourceTree = "<group>"; };
-		C663944777B04DD3D74D8BD69853C93D /* PTUSBHub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTUSBHub.h; path = peertalk/PTUSBHub.h; sourceTree = "<group>"; };
-		C741F8A39FD3BBF1B24CE516B77DB764 /* PTChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTChannel.m; path = peertalk/PTChannel.m; sourceTree = "<group>"; };
-		D01F09EA5CEB307796C77052B388750D /* PeerTalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeerTalk-dummy.m"; sourceTree = "<group>"; };
-		D271E5DE163E99125344371F093F14CE /* PeerTalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-umbrella.h"; sourceTree = "<group>"; };
-		E63288E92409DF14A9D8D490EF3E022F /* Peertalk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Peertalk.h; path = peertalk/Peertalk.h; sourceTree = "<group>"; };
-		EDD00C761F391D59D3003EE741A2C070 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3DD52A456232D6EDF128F9C7FB75970 /* Pods-Harmony Desktop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harmony Desktop-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA8EC43C0DACB3E45C5F4A1787778FAC /* Pods-Harmony Desktop-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harmony Desktop-frameworks.sh"; sourceTree = "<group>"; };
-		FC204167850666D536C0FC1FC4C22285 /* Pods_Harmony_Desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Harmony_Desktop.framework; path = "Pods-Harmony Desktop.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD51BA7A3FDE55173CA3557370EFEFA5 /* PTPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPrivate.h; path = peertalk/PTPrivate.h; sourceTree = "<group>"; };
+		09E9D076240FB870F59D3309035F07F7 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		0AF40BFCB8AACA2153D212EEE4C2FBCE /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		0C5F2FB8E3451060967BAEACBDFDAD2D /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		225076D0321178A89256B7DF1F604175 /* PTPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPrivate.h; path = peertalk/PTPrivate.h; sourceTree = "<group>"; };
+		3113ED576E32E5F4C837F6058656323E /* PeerTalk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-prefix.pch"; sourceTree = "<group>"; };
+		3B1FCFA3DD590DFA424660EFF92E3212 /* PeerTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PeerTalk.framework; path = PeerTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E9F6C57852FA5E9FCA926EEC18BA1AF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		42EE6F889E8FB133759E2EF7A38FCF42 /* PeerTalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PeerTalk.modulemap; sourceTree = "<group>"; };
+		43CB78120045526F8E6218C7ACAC6481 /* Pods-Harmony Desktop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Harmony Desktop-acknowledgements.markdown"; sourceTree = "<group>"; };
+		499964AC13B149B93A841643B50BC9AF /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		4D51741432C5C106A6460FDF64A67978 /* Pods-Harmony Desktop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Harmony Desktop.modulemap"; sourceTree = "<group>"; };
+		4FD4504F5069CE8950F0ED1FE5790C4B /* Pods-Harmony Desktop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Harmony Desktop-umbrella.h"; sourceTree = "<group>"; };
+		546FC9CB0F7C72171C97D1F3A454EBEF /* PTUSBHub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTUSBHub.h; path = peertalk/PTUSBHub.h; sourceTree = "<group>"; };
+		6640B32C85117DB50B47CDC499AD8DAC /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		6A60F6C64570E9F2375CF7E92E892BFF /* Peertalk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Peertalk.h; path = peertalk/Peertalk.h; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8D62A83C76CC07A4E1A63B11474577 /* PeerTalk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PeerTalk-Info.plist"; sourceTree = "<group>"; };
+		6DB1DD5BA33191137DDCDC5C5BB8A7AE /* PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = peertalk/PTProtocol.m; sourceTree = "<group>"; };
+		6E91B4F0A656D4DB7E699CC79E053A53 /* Pods-Harmony Desktop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harmony Desktop-Info.plist"; sourceTree = "<group>"; };
+		73AE5C7573A32C34D689814194BD058F /* PTChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTChannel.m; path = peertalk/PTChannel.m; sourceTree = "<group>"; };
+		7492EFD750222C70D7D64D993E1DA52F /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		7F14315A75546EB38771A7C7D082307A /* Pods_Harmony_Desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Harmony_Desktop.framework; path = "Pods-Harmony Desktop.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FE978B837300B32BFFCDAB8F62EE7A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		932C7AC7274383D5CB255B9509628FD0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		9A74FDD323299F14B72654561AAD54F5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		9D2053C1DB25243ED5BD53BEE53F8C9C /* PeerTalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeerTalk-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A92BDB89E981C7600474EC5EBE55EEFF /* Pods-Harmony Desktop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Harmony Desktop-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADF3BAE505FC70112CE36A1FC4879B58 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		C4B2DF1CE9AA3BEC07B11BCAC735C5EA /* PeerTalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeerTalk-umbrella.h"; sourceTree = "<group>"; };
+		CD5F3612C24BF6D1B37893381A52639F /* PTUSBHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTUSBHub.m; path = peertalk/PTUSBHub.m; sourceTree = "<group>"; };
+		CDA278A5B82B3127B6DC3F42BF0F7AE6 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		D3E099A226FD92F1A1C656966FC47F51 /* Pods-Harmony Desktop-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Harmony Desktop-frameworks.sh"; sourceTree = "<group>"; };
+		D59855FA74E4316928F38C203C6672A8 /* Pods-Harmony Desktop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harmony Desktop.release.xcconfig"; sourceTree = "<group>"; };
+		D9EEF1C633A740C47C290A5CD427B71D /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		DC6D49BB107976717718B69AB28831D5 /* PeerTalk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeerTalk.xcconfig; sourceTree = "<group>"; };
+		E4217FA19537EC06F4B3C84C6713379F /* Pods-Harmony Desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Harmony Desktop.debug.xcconfig"; sourceTree = "<group>"; };
+		E5D54A2E15D5722227A74E853262D45C /* Pods-Harmony Desktop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Harmony Desktop-dummy.m"; sourceTree = "<group>"; };
+		E75CA66E6237BE005E32EDDBD0491F58 /* PTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = peertalk/PTChannel.h; sourceTree = "<group>"; };
+		FB5FF80AF8903C3FA5AB6CA152620B4B /* PTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTProtocol.h; path = peertalk/PTProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B96DB75677B5609319A369CB56EC88E /* Frameworks */ = {
+		0B64B4D88B93933690FD852108FE0E40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349F232AA9740F89145F5848E34F5A9E /* Cocoa.framework in Frameworks */,
+				735214081F98B9550FBE803825D416E9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD13487DE182297984484A98E88BBE85 /* Frameworks */ = {
+		B00F83CB6FF8EE5590C198CFCBB9EECC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F4F1C5858497EE1D7FD2E917D64511 /* Cocoa.framework in Frameworks */,
+				8E833467B449C5AA8EB04A12B5674FC1 /* Cocoa.framework in Frameworks */,
+				181C81C739F806BCDD6F760FD30A01FB /* CoreServices.framework in Frameworks */,
+				ABE2CF7FE359B07D646CBBE2C5A6B147 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C059BC289C216209E12A161E49C0DF23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961657DA2AFF00C23784E740BEC58DA5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C068A18C5413F804A2959126093416 /* OS X */ = {
+		0ECB5E1856238CA1BE17E24CA68936F9 /* Pods-Harmony Desktop */ = {
 			isa = PBXGroup;
 			children = (
-				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		2B84C82B60154732A1CF42CA3AF08345 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8E1ABE86205FF7C3E335E7AB838F95D9 /* PeerTalk.framework */,
-				FC204167850666D536C0FC1FC4C22285 /* Pods_Harmony_Desktop.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2C5C0666DD600E54E47B362DFEA0F3F8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				76554FC2043926109D4466E06F5CA8BC /* Pods-Harmony Desktop */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04C068A18C5413F804A2959126093416 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76554FC2043926109D4466E06F5CA8BC /* Pods-Harmony Desktop */ = {
-			isa = PBXGroup;
-			children = (
-				EDD00C761F391D59D3003EE741A2C070 /* Info.plist */,
-				6C76DE7C43634982F47548D8A8B75632 /* Pods-Harmony Desktop.modulemap */,
-				0281DE3FB00A2F07989A1F695820FCCC /* Pods-Harmony Desktop-acknowledgements.markdown */,
-				F3DD52A456232D6EDF128F9C7FB75970 /* Pods-Harmony Desktop-acknowledgements.plist */,
-				377210CA024462CEE812997B470DC9CD /* Pods-Harmony Desktop-dummy.m */,
-				FA8EC43C0DACB3E45C5F4A1787778FAC /* Pods-Harmony Desktop-frameworks.sh */,
-				0F5A2BAAA432B3588B58E444AC21BC44 /* Pods-Harmony Desktop-resources.sh */,
-				4E83887F3D232C10C6C5BCE96B931B8D /* Pods-Harmony Desktop-umbrella.h */,
-				4FCAA231F8CD589E2F098FFAD40C2B9D /* Pods-Harmony Desktop.debug.xcconfig */,
-				87D23A8EF48EBC9D0E8C16AFCCF06D92 /* Pods-Harmony Desktop.release.xcconfig */,
+				4D51741432C5C106A6460FDF64A67978 /* Pods-Harmony Desktop.modulemap */,
+				43CB78120045526F8E6218C7ACAC6481 /* Pods-Harmony Desktop-acknowledgements.markdown */,
+				A92BDB89E981C7600474EC5EBE55EEFF /* Pods-Harmony Desktop-acknowledgements.plist */,
+				E5D54A2E15D5722227A74E853262D45C /* Pods-Harmony Desktop-dummy.m */,
+				D3E099A226FD92F1A1C656966FC47F51 /* Pods-Harmony Desktop-frameworks.sh */,
+				6E91B4F0A656D4DB7E699CC79E053A53 /* Pods-Harmony Desktop-Info.plist */,
+				4FD4504F5069CE8950F0ED1FE5790C4B /* Pods-Harmony Desktop-umbrella.h */,
+				E4217FA19537EC06F4B3C84C6713379F /* Pods-Harmony Desktop.debug.xcconfig */,
+				D59855FA74E4316928F38C203C6672A8 /* Pods-Harmony Desktop.release.xcconfig */,
 			);
 			name = "Pods-Harmony Desktop";
 			path = "Target Support Files/Pods-Harmony Desktop";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		14451CF5295DCCDDC42A85D5CEEEAE48 /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				9152F1AC9DBB8080B4E3A49A20D65F8F /* Pods */,
-				2B84C82B60154732A1CF42CA3AF08345 /* Products */,
-				2C5C0666DD600E54E47B362DFEA0F3F8 /* Targets Support Files */,
+				9A74FDD323299F14B72654561AAD54F5 /* GCDAsyncSocket.h */,
+				09E9D076240FB870F59D3309035F07F7 /* GCDAsyncSocket.m */,
+				D9EEF1C633A740C47C290A5CD427B71D /* GCDAsyncUdpSocket.h */,
+				499964AC13B149B93A841643B50BC9AF /* GCDAsyncUdpSocket.m */,
+				8FAF7DF87CF7902E3F4EC8F68A2C409F /* Support Files */,
 			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
-		861533D72EB1F17773465DFB99641D69 /* Support Files */ = {
+		1D0D7C65797EC73515BF1F31DCF83B45 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E48B120815FAEAAF569A43063642E27 /* Info.plist */,
-				52D02019BECA49D52FC1418D9B173BA2 /* PeerTalk.modulemap */,
-				BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */,
-				D01F09EA5CEB307796C77052B388750D /* PeerTalk-dummy.m */,
-				7A8C6D1D5EB9B17946670FAE555E85E9 /* PeerTalk-prefix.pch */,
-				D271E5DE163E99125344371F093F14CE /* PeerTalk-umbrella.h */,
+				0ECB5E1856238CA1BE17E24CA68936F9 /* Pods-Harmony Desktop */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2C2EF6CC4F0160A889A05D75E8FF608B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14451CF5295DCCDDC42A85D5CEEEAE48 /* CocoaAsyncSocket */,
+				DA5EB49179441B0991D1FC0B293F7671 /* PeerTalk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D8BE59CACC8F1463A7874ECEFD2C8DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				3B1FCFA3DD590DFA424660EFF92E3212 /* PeerTalk.framework */,
+				7F14315A75546EB38771A7C7D082307A /* Pods_Harmony_Desktop.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71F8A982CBD42B81238D1844674062DB /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				932C7AC7274383D5CB255B9509628FD0 /* Cocoa.framework */,
+				3E9F6C57852FA5E9FCA926EEC18BA1AF /* CoreServices.framework */,
+				80FE978B837300B32BFFCDAB8F62EE7A /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		8FAF7DF87CF7902E3F4EC8F68A2C409F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDA278A5B82B3127B6DC3F42BF0F7AE6 /* CocoaAsyncSocket.modulemap */,
+				7492EFD750222C70D7D64D993E1DA52F /* CocoaAsyncSocket.xcconfig */,
+				ADF3BAE505FC70112CE36A1FC4879B58 /* CocoaAsyncSocket-dummy.m */,
+				6640B32C85117DB50B47CDC499AD8DAC /* CocoaAsyncSocket-Info.plist */,
+				0C5F2FB8E3451060967BAEACBDFDAD2D /* CocoaAsyncSocket-prefix.pch */,
+				0AF40BFCB8AACA2153D212EEE4C2FBCE /* CocoaAsyncSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		94C6F66988B912EC14177DF2168DFDAE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EE6F889E8FB133759E2EF7A38FCF42 /* PeerTalk.modulemap */,
+				DC6D49BB107976717718B69AB28831D5 /* PeerTalk.xcconfig */,
+				9D2053C1DB25243ED5BD53BEE53F8C9C /* PeerTalk-dummy.m */,
+				6D8D62A83C76CC07A4E1A63B11474577 /* PeerTalk-Info.plist */,
+				3113ED576E32E5F4C837F6058656323E /* PeerTalk-prefix.pch */,
+				C4B2DF1CE9AA3BEC07B11BCAC735C5EA /* PeerTalk-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PeerTalk";
 			sourceTree = "<group>";
 		};
-		9152F1AC9DBB8080B4E3A49A20D65F8F /* Pods */ = {
+		A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A752CA07DD7F0F116DDFCF4BBDFD104F /* PeerTalk */,
+				71F8A982CBD42B81238D1844674062DB /* OS X */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A752CA07DD7F0F116DDFCF4BBDFD104F /* PeerTalk */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				E63288E92409DF14A9D8D490EF3E022F /* Peertalk.h */,
-				8A9A2FB1912218D31F6051D1FCA52F1C /* PTChannel.h */,
-				C741F8A39FD3BBF1B24CE516B77DB764 /* PTChannel.m */,
-				FD51BA7A3FDE55173CA3557370EFEFA5 /* PTPrivate.h */,
-				538CCA3F63996B0BF81B2018E1FECA11 /* PTProtocol.h */,
-				AFD0EC27A6BE06674F0C6BFB12B959A8 /* PTProtocol.m */,
-				C663944777B04DD3D74D8BD69853C93D /* PTUSBHub.h */,
-				4C00BC93ECDF1661B10EB4F101EC8A56 /* PTUSBHub.m */,
-				861533D72EB1F17773465DFB99641D69 /* Support Files */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */,
+				2C2EF6CC4F0160A889A05D75E8FF608B /* Pods */,
+				2D8BE59CACC8F1463A7874ECEFD2C8DF /* Products */,
+				1D0D7C65797EC73515BF1F31DCF83B45 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DA5EB49179441B0991D1FC0B293F7671 /* PeerTalk */ = {
+			isa = PBXGroup;
+			children = (
+				6A60F6C64570E9F2375CF7E92E892BFF /* Peertalk.h */,
+				E75CA66E6237BE005E32EDDBD0491F58 /* PTChannel.h */,
+				73AE5C7573A32C34D689814194BD058F /* PTChannel.m */,
+				225076D0321178A89256B7DF1F604175 /* PTPrivate.h */,
+				FB5FF80AF8903C3FA5AB6CA152620B4B /* PTProtocol.h */,
+				6DB1DD5BA33191137DDCDC5C5BB8A7AE /* PTProtocol.m */,
+				546FC9CB0F7C72171C97D1F3A454EBEF /* PTUSBHub.h */,
+				CD5F3612C24BF6D1B37893381A52639F /* PTUSBHub.m */,
+				94C6F66988B912EC14177DF2168DFDAE /* Support Files */,
 			);
 			name = PeerTalk;
 			path = PeerTalk;
@@ -188,37 +256,66 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9B08B5B0B9BBB6407868F1E565BD0187 /* Headers */ = {
+		46DC354CF49E8C241BEF0CFEFCDBAEDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201A0B1A54556DA45CF4863044C0FBC6 /* PeerTalk-umbrella.h in Headers */,
-				204FD360D0529F7BB2D9F2549D413F62 /* Peertalk.h in Headers */,
-				2F562110CACBDF1E85346406A235DB4B /* PTChannel.h in Headers */,
-				111CE80EE03739AFD9089E1CA90122BB /* PTPrivate.h in Headers */,
-				30FB9F772D02577AD7D3861455BA56A1 /* PTProtocol.h in Headers */,
-				F59CFEDF0EC5FE6A27A0A072B92C9B30 /* PTUSBHub.h in Headers */,
+				E166CC63A6043463EB6879BD42CD13E8 /* Pods-Harmony Desktop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B79859CA8E5079AB5564D0AD3540278B /* Headers */ = {
+		8A7B7440C3840995EFBECB3C015CAB15 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA428B772D3E035A521C28D0296AC92 /* Pods-Harmony Desktop-umbrella.h in Headers */,
+				AFE1A00176DB746A13F566FB547BA30C /* PeerTalk-umbrella.h in Headers */,
+				58414D9A71481CDBA462F8E12D4EACB3 /* Peertalk.h in Headers */,
+				E52EAE1A9D2F34ADFD54B5EEC57EDDF8 /* PTChannel.h in Headers */,
+				3049164347040F4B058A22718087F21D /* PTPrivate.h in Headers */,
+				ABC814C543979C2E5BEA3CC114C5958E /* PTProtocol.h in Headers */,
+				D5895848CC357E9BCE52ACA311E7993D /* PTUSBHub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		99E175ABF70FD641C60716403C7D0908 /* PeerTalk */ = {
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 373E8164FA50C31E58C8F45152CA90C9 /* Build configuration list for PBXNativeTarget "PeerTalk" */;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
 			buildPhases = (
-				08B11D671040F36B188265AD529FB2F7 /* Sources */,
-				BD13487DE182297984484A98E88BBE85 /* Frameworks */,
-				9B08B5B0B9BBB6407868F1E565BD0187 /* Headers */,
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */,
+				B00F83CB6FF8EE5590C198CFCBB9EECC /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FD69D817A22366167FF59EC7BC8EE7C /* PeerTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A099599073689DC3745F77831043DBE /* Build configuration list for PBXNativeTarget "PeerTalk" */;
+			buildPhases = (
+				8A7B7440C3840995EFBECB3C015CAB15 /* Headers */,
+				D68E59E90A8A151B7C0CB083C3E9F0B8 /* Sources */,
+				C059BC289C216209E12A161E49C0DF23 /* Frameworks */,
+				91D19F458DB8066301DF55695629028F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -226,164 +323,416 @@
 			);
 			name = PeerTalk;
 			productName = PeerTalk;
-			productReference = 8E1ABE86205FF7C3E335E7AB838F95D9 /* PeerTalk.framework */;
+			productReference = 3B1FCFA3DD590DFA424660EFF92E3212 /* PeerTalk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FE6D6A42D26F858AB85839E1BAE869EF /* Pods-Harmony Desktop */ = {
+		FF55012728A372387317A57EFA648A98 /* Pods-Harmony Desktop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89093CE1AD8AFC5687D05F6B21B4E30C /* Build configuration list for PBXNativeTarget "Pods-Harmony Desktop" */;
+			buildConfigurationList = D5A1CC6BF2625677B88466AB17FFDF89 /* Build configuration list for PBXNativeTarget "Pods-Harmony Desktop" */;
 			buildPhases = (
-				CC5AB61B6590D8812D7636082F6DC847 /* Sources */,
-				3B96DB75677B5609319A369CB56EC88E /* Frameworks */,
-				B79859CA8E5079AB5564D0AD3540278B /* Headers */,
+				46DC354CF49E8C241BEF0CFEFCDBAEDF /* Headers */,
+				A432A27B20F76D5D8A3A065F0BD5EAFE /* Sources */,
+				0B64B4D88B93933690FD852108FE0E40 /* Frameworks */,
+				7197F223033F37777E0780DA0DD72409 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C2964D72FCD81164E09CBDD9E461F7DE /* PBXTargetDependency */,
+				3C8E99EF74F76152526F77D9A5575D61 /* PBXTargetDependency */,
+				F0AB04FA4FC7B42EED5700BADA34E25B /* PBXTargetDependency */,
 			);
 			name = "Pods-Harmony Desktop";
 			productName = "Pods-Harmony Desktop";
-			productReference = FC204167850666D536C0FC1FC4C22285 /* Pods_Harmony_Desktop.framework */;
+			productReference = 7F14315A75546EB38771A7C7D082307A /* Pods_Harmony_Desktop.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2B84C82B60154732A1CF42CA3AF08345 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2D8BE59CACC8F1463A7874ECEFD2C8DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99E175ABF70FD641C60716403C7D0908 /* PeerTalk */,
-				FE6D6A42D26F858AB85839E1BAE869EF /* Pods-Harmony Desktop */,
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				6FD69D817A22366167FF59EC7BC8EE7C /* PeerTalk */,
+				FF55012728A372387317A57EFA648A98 /* Pods-Harmony Desktop */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		08B11D671040F36B188265AD529FB2F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		7197F223033F37777E0780DA0DD72409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68DC99E3985147D63424A60AF66630A1 /* PeerTalk-dummy.m in Sources */,
-				2E487BBED68E19D948C4A6145BD722F9 /* PTChannel.m in Sources */,
-				C2E9226E90E33AEE74D5A79DB35F83A3 /* PTProtocol.m in Sources */,
-				E8FA3BD84E5A7705F594A5AB98F40059 /* PTUSBHub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC5AB61B6590D8812D7636082F6DC847 /* Sources */ = {
+		91D19F458DB8066301DF55695629028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE684CF592FD75F438FE792A3E522499 /* Pods-Harmony Desktop-dummy.m in Sources */,
+				FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */,
+				6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A432A27B20F76D5D8A3A065F0BD5EAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B5104F1172BD351E46DA5FD1CB8ED4 /* Pods-Harmony Desktop-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68E59E90A8A151B7C0CB083C3E9F0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4339497F7D326DBDE8E5C85F87CD9B /* PeerTalk-dummy.m in Sources */,
+				781E6E1036157A7B3C0AD6C694D8AEF5 /* PTChannel.m in Sources */,
+				FA903A14CA27AF1092C6B0F44867CE30 /* PTProtocol.m in Sources */,
+				E00BD58C07B8A4100BBAB93356F3A96C /* PTUSBHub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2964D72FCD81164E09CBDD9E461F7DE /* PBXTargetDependency */ = {
+		3C8E99EF74F76152526F77D9A5575D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = A7C1C966DF28B2418E18EC9DE636ACFC /* PBXContainerItemProxy */;
+		};
+		F0AB04FA4FC7B42EED5700BADA34E25B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PeerTalk;
-			target = 99E175ABF70FD641C60716403C7D0908 /* PeerTalk */;
-			targetProxy = D661D814294846B28072E139CE2F7FA3 /* PBXContainerItemProxy */;
+			target = 6FD69D817A22366167FF59EC7BC8EE7C /* PeerTalk */;
+			targetProxy = 66BF399756F374FA54AD88386A368DCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4540B30AD9C0E6CB51B2DD9785470495 /* Debug */ = {
+		0A4E8437AC7C5E8A6E80920A6EEE3954 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2B129A4BAC5FD2C7D6E19D8EB8427DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6D49BB107976717718B69AB28831D5 /* PeerTalk.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeerTalk/PeerTalk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
+				PRODUCT_MODULE_NAME = PeerTalk;
+				PRODUCT_NAME = PeerTalk;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F14B856CAD788D737965259A3024EA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		830DBE08102BDE17F9A1EEF5FAE6551F /* Debug */ = {
+		99591EB022701CFFD5321DB0D0F13458 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FCAA231F8CD589E2F098FFAD40C2B9D /* Pods-Harmony Desktop.debug.xcconfig */;
+			baseConfigurationReference = DC6D49BB107976717718B69AB28831D5 /* PeerTalk.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Harmony Desktop/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeerTalk/PeerTalk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
+				PRODUCT_MODULE_NAME = PeerTalk;
+				PRODUCT_NAME = PeerTalk;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7E53C189E10670C0049E93B6DA9788E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7492EFD750222C70D7D64D993E1DA52F /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D77ACBC6F1E8986C260CCDBF4F078728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7492EFD750222C70D7D64D993E1DA52F /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D77C49456EF0631EE0A9168894F62124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4217FA19537EC06F4B3C84C6713379F /* Pods-Harmony Desktop.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Harmony_Desktop;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -391,186 +740,82 @@
 			};
 			name = Debug;
 		};
-		945EB9E2C47E9C30E16985278CFFC5AE /* Release */ = {
+		EC22D2026788D977228ED4C17EA92319 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D59855FA74E4316928F38C203C6672A8 /* Pods-Harmony Desktop.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A86C02E8AC0570F7E5228E891EDBEEEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PeerTalk/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PeerTalk;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D8900C4491A5FAC5610F5E53B9FA2DF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87D23A8EF48EBC9D0E8C16AFCCF06D92 /* Pods-Harmony Desktop.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Harmony Desktop/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/Pods-Harmony Desktop/Pods-Harmony Desktop.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Harmony_Desktop;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		F892D0AF7A7F47208D1C23A0CA9AB285 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB0F32D99A85C016375953DD295CE232 /* PeerTalk.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PeerTalk/PeerTalk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PeerTalk/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PeerTalk/PeerTalk.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PeerTalk;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4540B30AD9C0E6CB51B2DD9785470495 /* Debug */,
-				945EB9E2C47E9C30E16985278CFFC5AE /* Release */,
+				5F14B856CAD788D737965259A3024EA6 /* Debug */,
+				0A4E8437AC7C5E8A6E80920A6EEE3954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		373E8164FA50C31E58C8F45152CA90C9 /* Build configuration list for PBXNativeTarget "PeerTalk" */ = {
+		4A099599073689DC3745F77831043DBE /* Build configuration list for PBXNativeTarget "PeerTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F892D0AF7A7F47208D1C23A0CA9AB285 /* Debug */,
-				A86C02E8AC0570F7E5228E891EDBEEEF /* Release */,
+				99591EB022701CFFD5321DB0D0F13458 /* Debug */,
+				2B129A4BAC5FD2C7D6E19D8EB8427DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89093CE1AD8AFC5687D05F6B21B4E30C /* Build configuration list for PBXNativeTarget "Pods-Harmony Desktop" */ = {
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				830DBE08102BDE17F9A1EEF5FAE6551F /* Debug */,
-				D8900C4491A5FAC5610F5E53B9FA2DF1 /* Release */,
+				D77ACBC6F1E8986C260CCDBF4F078728 /* Debug */,
+				B7E53C189E10670C0049E93B6DA9788E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A1CC6BF2625677B88466AB17FFDF89 /* Build configuration list for PBXNativeTarget "Pods-Harmony Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D77C49456EF0631EE0A9168894F62124 /* Debug */,
+				EC22D2026788D977228ED4C17EA92319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

@@ -5,5 +5,7 @@ target 'Harmony Desktop' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk'
+  pod 'CocoaAsyncSocket'  
+  # pod 'SwiftSocket', :git => 'https://github.com/FrederickGeek8/SwiftSocket'
   # Pods for Duet Desktop
 end

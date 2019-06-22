@@ -29,6 +29,7 @@
 		B65D1A6F1F21400C00972655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65D1A721F21400C00972655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B65D1A741F21400C00972655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B678C8CD22BDF0B700F2E822 /* NSStream+BoundPairAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSStream+BoundPairAdditions.m"; sourceTree = "<group>"; };
 		F1297EAE33159964537091D6 /* Pods_Harmony_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +85,7 @@
 			children = (
 				B65D1A681F21400C00972655 /* AppDelegate.swift */,
 				B65D1A6A1F21400C00972655 /* ViewController.swift */,
+				B678C8CD22BDF0B700F2E822 /* NSStream+BoundPairAdditions.m */,
 				B6491E171F21642900B88B37 /* PayloadConverter.m */,
 				B65D1A6C1F21400C00972655 /* Main.storyboard */,
 				B65D1A6F1F21400C00972655 /* Assets.xcassets */,
@@ -107,7 +109,6 @@
 				B65D1A621F21400C00972655 /* Frameworks */,
 				B65D1A631F21400C00972655 /* Resources */,
 				0890CE3C1332100D9334C9A5 /* [CP] Embed Pods Frameworks */,
-				7142CB90563AAE7E0C957C2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,8 +131,8 @@
 				TargetAttributes = {
 					B65D1A641F21400C00972655 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = D28VL3M2E3;
-						LastSwiftMigration = 0830;
+						DevelopmentTeam = 9DA4RFE7AJ;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -174,13 +176,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harmony iOS/Pods-Harmony iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PeerTalk/PeerTalk.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeerTalk.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Harmony iOS/Pods-Harmony iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harmony iOS/Pods-Harmony iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		23B70E70D52484FDDBF8EB75 /* [CP] Check Pods Manifest.lock */ = {
@@ -189,28 +194,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harmony iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7142CB90563AAE7E0C957C2B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Harmony iOS/Pods-Harmony iOS-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -349,14 +342,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = D28VL3M2E3;
+				DEVELOPMENT_TEAM = 9DA4RFE7AJ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Harmony iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.freddy.Harmony-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Harmony iOS/Harmony iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -366,13 +360,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = D28VL3M2E3;
+				DEVELOPMENT_TEAM = 9DA4RFE7AJ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Harmony iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.freddy.Harmony-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Harmony iOS/Harmony iOS-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
